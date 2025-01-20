@@ -1,8 +1,8 @@
 import "./globals.css"
 import { Inter, Space_Grotesk } from "next/font/google"
 import { cn } from "@/lib/utils"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+import { Navigation } from "../components/navigation"
+import { Footer } from "../components/footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" })
