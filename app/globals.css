@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-space: var(--font-space);
+}
+
+.font-space {
+  font-family: var(--font-space);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-green-400;
+}
+
