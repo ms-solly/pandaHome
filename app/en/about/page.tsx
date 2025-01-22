@@ -41,18 +41,19 @@ export default function About() {
           </p>
 
           <p>
-            While tech is my primary focus, I also have a strong creative side. Writing, doodling, singing, and exploring digital art are just a few of the creative pursuits I enjoy. My creativity flows best when I can let go of rigid structures, whether it’s writing poetry or sketching designs. I’m particularly drawn to writing as a form of self-expression, and I’ve experimented with a variety of creative mediums over the years.
+            While tech is my primary focus, I also have a strong creative side. Writing, doodling, singing, and exploring digital art are just a few of the creative pursuits I enjoy. My creativity flows best when I can let go of rigid structures, whether it’s writing poetry or sketching designs. I’m particularly drawn to writing as a form of self-expression, and I’ve experimented with a variety of creative mediums over the years. One of my greatest sources of inspiration comes from those who are shaping my thinking. My brother is always encouraging me to think differently and explore new ideas, which is driving me to push my limits. Similarly, my elder sister inspires me. Her art and creativity have no bounds, and they are just amazing. She is the most kind and creative person & am always amazed by it, and it inspires me too.
           </p>
 
           <p>Beyond web development, I've also edited two books focusing on social issues and raising awareness against injustice. One of them, written by Abhinav Patel, aims to shape young minds by emphasizing how their actions can impact innocent lives. The book presents real-life stories in poetic form, shedding light on the lack of justice and the importance of social awareness. You can read it <Link href={"https://abhinavpatel00.github.io/herdeadvoice/"} className=" font-medium text-pink-600 hover:text-pink-700" target="_blank" rel="noopener noreferrer">Here<TbExternalLink className="text-pink-600 inline mx-1" size={20} style={{verticalAlign: 'middle' }} />
           </Link>
           </p>
+
           <p>
             Back in school, I used to read books on personal growth mostly, which helped me improve myself and motivated me to keep learning. Nowadays, my reading interests have become more spontaneous, picking up books on a variety of topics without any specific pattern, whatever feels interesting. From tech-related reads to random subjects that spark curiosity, I always find something to learn from whatever I pick up. Novels have also become a favorite, offering an escape into different worlds and a chance to see life from new perspectives, but sometimes also showing me the worst side of the world for which I will be working to change it for later half of my life(till death) but for now I am doing what's in my hand.
           </p>
 
           <p>
-            I use AI tools like V0 and ChatGPT for technical tasks—helping me streamline workflows, solve coding challenges, and speed up development. However, when it comes to my creative endeavors, I prefer to work independently. Whether it's writing, poetry, or digital art, I find that my own creative instincts lead me the best. AI tools support me in my tech-related work, but I remain deeply connected to my personal way of creating art.
+            I use AI tools like V0 and ChatGPT for technical tasks—helping me streamline workflows, speed up development. However, when it comes to my creative endeavors, I prefer to work independently. Whether it's writing, poetry, or digital art, I find that my own creative instincts lead me the best. AI tools support me in my tech-related work, but I remain deeply connected to my personal way of creating art.
           </p>
 
           <p>
@@ -66,6 +67,7 @@ export default function About() {
           <p>
             I also have a deep interest in human psychology—understanding how people think and what drives their actions. In my free time, I like combining my love for art and tech by exploring both creative and technical projects. Whether it’s experimenting with new frameworks or designing something that reflects my personal style, I aim to strike a balance between the logical and creative sides of myself.
           </p>
+
 
           <p>
             If you're looking to collaborate or explore creative ideas, let's connect and make something great together!
