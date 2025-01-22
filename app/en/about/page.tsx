@@ -32,7 +32,8 @@ export default function About() {
           </p>
 
           <p>
-            I enjoy using tools like <b>Shadcn UI</b> for their responsive and beautiful components, which speed up development while maintaining a flexible structure. The best part is that these components are highly customizable, which gives me the freedom to tweak them as per my project’s needs. This flexibility has proven invaluable in my workflow, especially when designing user interfaces.
+            I enjoy using tools like <Link href={"https://ui.shadcn.com/"} className=" font-medium text-pink-600 hover:text-pink-700" target="_blank" rel="noopener noreferrer">Shadcn UI<TbExternalLink className="text-pink-600 inline mx-1" size={20} style={{verticalAlign: 'middle' }} />
+            </Link> for their responsive and beautiful components, which speed up development while maintaining a flexible structure. The best part is that these components are highly customizable, which gives me the freedom to tweak them as per my project’s needs. This flexibility has proven invaluable in my workflow, especially when designing user interfaces.
           </p>
 
           <p>
