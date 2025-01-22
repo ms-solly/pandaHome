@@ -1,4 +1,7 @@
+"use client"
+
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export function Footer() {
@@ -15,44 +18,67 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-space font-bold text-white">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="#projects" className="relative text-gray-400 hover:text-green-400 transition-colors before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-green-400 before:transition-all before:duration-300 hover:before:w-full">Projects</Link></li>
-              <li><Link href="#about" className="relative text-gray-400 hover:text-green-400 transition-colors before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-green-400 before:transition-all before:duration-300 hover:before:w-full">About</Link></li>
-              <li><Link href="/blog" className="relative text-gray-400 hover:text-green-400 transition-colors before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-green-400 before:transition-all before:duration-300 hover:before:w-full">Blog</Link></li>
-              <li><Link href="#contact" className="relative text-gray-400 hover:text-green-400 transition-colors before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-green-400 before:transition-all before:duration-300 hover:before:w-full">Contact</Link></li>
+              <li><Link href="/projects" className="relative text-gray-400 hover:text-green-400 transition-colors">Projects</Link></li>
+              <li><Link href="/about" className="relative text-gray-400 hover:text-green-400 transition-colors">About</Link></li>
+              <li><Link href="/blog" className="relative text-gray-400 hover:text-green-400 transition-colors">Blog</Link></li>
+              <li><Link href="/contact" className="relative text-gray-400 hover:text-green-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
           <div className="space-y-4">
             <h4 className="text-xl font-space font-bold text-white">Connect</h4>
             <div className="flex space-x-4">
-              <Link
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
-              >
+              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
                 <FaGithub size={24} />
               </Link>
-              <Link
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
-              >
+              <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
                 <FaTwitter size={24} />
               </Link>
-              <Link
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
-              >
+              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
                 <FaLinkedin size={24} />
               </Link>
             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">© {currentYear} PandaHome. All rights reserved.</p>
+          <p className="text-gray-400 flex items-center justify-center">
+            © {currentYear} PandaHome. Crafted with{' '}
+            <motion.svg
+              className="mx-1 w-6 h-6 text-red-500"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              initial={{ scale: 1 }}
+              animate={{
+                scale: 1, 
+                rotate: 0, 
+              }}
+              transition={{
+                duration: 0,
+                repeat: 0,
+              }}
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+              <motion.path
+                d="M12 13c-1.5 0-2.5-1.5-2.5-3s1-3 2.5-3c1.5 0 2.5 1.5 2.5 3s-1 3-2.5 3z"
+                fill="currentColor"
+                animate={{
+                  y: [0, 10, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+            </motion.svg>
+            . All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
