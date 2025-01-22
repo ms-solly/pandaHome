@@ -24,7 +24,7 @@ export default function About() {
           className="space-y-6 text-gray-300 leading-relaxed text-lg"
         >
           <p>
-            Hi, I'm Ghost – a web developer who enjoys experimenting with technology and design. I don't limit myself to a single framework, having worked with Next.js, Solid.js, Astro, Hugo, and more. Over time, TypeScript has become one of my favorite tools; at first, it felt a bit overwhelming, but as I've worked with it more, its benefits became clear. Tailwind CSS is my go-to for styling, and I've recently begun exploring UnoCSS to further improve my development process.
+            Hi, I'm Aditi J.– a web developer who enjoys experimenting with technology and design. I don't limit myself to a single framework, having worked with Next.js, Solid.js, Astro, Hugo, and more. Over time, TypeScript has become one of my favorite tools; at first, it felt a bit overwhelming, but as I've worked with it more, its benefits became clear. Tailwind CSS is my go-to for styling, and I've recently begun exploring UnoCSS to further improve my development process.
           </p>
 
           <p>

@@ -95,7 +95,7 @@ export function Hero() {
           className="lg:w-1/2"
         >
           <h2 className="text-xl font-medium text-gray-300">Hello, I am</h2> {/* Smaller text */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-green-400">Ghost</h1> {/* Larger Title */}
+          <h1 className="text-5xl lg:text-6xl font-bold text-green-400">Aditi J.</h1> {/* Larger Title */}
           <p className="text-lg lg:text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
           I enjoy building web experiences, exploring new technologies, and understanding how things work. In my free time, I like doodling, singing, and diving into topics like human psychology and more.
           </p>
