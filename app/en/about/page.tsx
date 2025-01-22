@@ -23,7 +23,6 @@ export default function About() {
           viewport={{ once: true }}
           className="space-y-6 text-gray-300 leading-relaxed text-lg"
         >
-          {/* Technical Side */}
           <p>
             Hi, I'm Ghost – a web developer who enjoys experimenting with technology and design. I don't limit myself to a single framework, having worked with Next.js, Solid.js, Astro, Hugo, and more. Over time, TypeScript has become one of my favorite tools; at first, it felt a bit overwhelming, but as I've worked with it more, its benefits became clear. Tailwind CSS is my go-to for styling, and I've recently begun exploring UnoCSS to further improve my development process.
           </p>
@@ -33,18 +32,20 @@ export default function About() {
           </p>
 
           <p>
-            I enjoy using tools like **Shadcn UI** for their responsive and beautiful components, which speed up development while maintaining a flexible structure. The best part is that these components are highly customizable, which gives me the freedom to tweak them as per my project’s needs. This flexibility has proven invaluable in my workflow, especially when designing user interfaces.
+            I enjoy using tools like <b>Shadcn UI</b> for their responsive and beautiful components, which speed up development while maintaining a flexible structure. The best part is that these components are highly customizable, which gives me the freedom to tweak them as per my project’s needs. This flexibility has proven invaluable in my workflow, especially when designing user interfaces.
           </p>
 
           <p>
             Right now, I’m diving deep into C++ and revisiting C. I prefer working with C-style C++ for its speed and simplicity. I'm also learning game development and experimenting with game asset creation. I thrive in the process of building things, solving problems, and figuring out how everything fits together. If you're curious about my work or tech interests, feel free to connect with me on LinkedIn.
           </p>
 
-          {/* Creative Side */}
           <p>
             While tech is my primary focus, I also have a strong creative side. Writing, doodling, singing, and exploring digital art are just a few of the creative pursuits I enjoy. My creativity flows best when I can let go of rigid structures, whether it’s writing poetry or sketching designs. I’m particularly drawn to writing as a form of self-expression, and I’ve experimented with a variety of creative mediums over the years.
           </p>
 
+          <p>Beyond web development, I've also edited two books focusing on social issues and raising awareness against injustice. One of them, written by Abhinav Patel, aims to shape young minds by emphasizing how their actions can impact innocent lives. The book presents real-life stories in poetic form, shedding light on the lack of justice and the importance of social awareness. You can read it <Link href={"https://abhinavpatel00.github.io/herdeadvoice/"} className=" font-medium text-pink-600 hover:text-pink-700" target="_blank" rel="noopener noreferrer">Here<TbExternalLink className="text-pink-600 inline mx-1" size={20} style={{verticalAlign: 'middle' }} />
+          </Link>
+          </p>
           <p>
             Back in school, I used to read books on personal growth mostly, which helped me improve myself and motivated me to keep learning. Nowadays, my reading interests have become more spontaneous, picking up books on a variety of topics without any specific pattern, whatever feels interesting. From tech-related reads to random subjects that spark curiosity, I always find something to learn from whatever I pick up. Novels have also become a favorite, offering an escape into different worlds and a chance to see life from new perspectives, but sometimes also showing me the worst side of the world for which I will be working to change it for later half of my life(till death) but for now I am doing what's in my hand.
           </p>
@@ -61,7 +62,6 @@ export default function About() {
             .
           </p>
 
-          {/* Combined Technical and Creative Interests */}
           <p>
             I also have a deep interest in human psychology—understanding how people think and what drives their actions. In my free time, I like combining my love for art and tech by exploring both creative and technical projects. Whether it’s experimenting with new frameworks or designing something that reflects my personal style, I aim to strike a balance between the logical and creative sides of myself.
           </p>
