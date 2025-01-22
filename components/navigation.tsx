@@ -12,6 +12,14 @@ function NavLink({ href, children, ...props }) {
     </Link>
   );
 }
+function RootNavLink({ href, children, ...props }) {
+  return (
+    <Link href={href}   className="relative block py-2 text-xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-blue-400 transition-colors before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-green-400 before:transition-all before:duration-300 hover:before:w-full"
+    {...props}>
+      {children}
+    </Link>
+  );
+}
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,14 +37,14 @@ export function Navigation() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/70 backdrop-blur-md" : ""}`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-space font-bold text-white">
+          <RootNavLink href="/">
             PandaHome
-          </Link>
+          </RootNavLink>
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink href="#projects">Projects</NavLink>
-            <NavLink href="#about">About</NavLink>
+            <NavLink href="/projects">Projects</NavLink>
+            <NavLink href="/about">About</NavLink>
             <NavLink href="/blog">Blog</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </div>
           <button className="md:hidden text-white focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <ImCross size={24} /> : <MdMenu size={24} />}
@@ -46,16 +54,16 @@ export function Navigation() {
       {isOpen && (
         <div className="md:hidden bg-black/90 backdrop-blur-md">
           <div className="container mx-auto px-6 py-4">
-            <NavLink href="#projects" onClick={() => setIsOpen(false)}>
+            <NavLink href="/projects" onClick={() => setIsOpen(false)}>
               Projects
             </NavLink>
-            <NavLink href="#about" onClick={() => setIsOpen(false)}>
+            <NavLink href="/about" onClick={() => setIsOpen(false)}>
               About
             </NavLink>
             <NavLink href="/blog" onClick={() => setIsOpen(false)}>
               Blog
             </NavLink>
-            <NavLink href="#contact" onClick={() => setIsOpen(false)}>
+            <NavLink href="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </NavLink>
           </div>

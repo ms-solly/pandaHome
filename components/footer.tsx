@@ -24,30 +24,30 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-space font-bold text-white">Connect</h4>
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
               >
                 <FaGithub size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
               >
                 <FaTwitter size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110 active:scale-90"
               >
                 <FaLinkedin size={24} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
