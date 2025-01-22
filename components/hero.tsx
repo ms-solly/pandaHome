@@ -81,47 +81,47 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-gray-900 pt-32 lg:pt-10 px-8"> 
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
-        style={{ background: "radial-gradient(circle at 50% 50%, #111 0%, #000 100%)" }}
-      />
-      <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-16">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="lg:w-1/2"
-        >
-          <h2 className="text-xl font-medium text-gray-300">Hello, I am</h2> {/* Smaller text */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-green-400">Aditi J.</h1> {/* Larger Title */}
-          <p className="text-lg lg:text-xl text-gray-300 mt-6 max-w-full mx-auto px-4">
-  I enjoy building web experiences, exploring new technologies, and understanding how things work. In my free time, I like doodling, singing, and diving into topics like human psychology and more.
-</p>
-<div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-6 mx-6">
-  <Link href="/projects" className="bg-green-400 text-black px-10 py-4 rounded-full text-xl font-medium hover:bg-green-500 transition w-full sm:w-auto">
-    View Projects
-  </Link>
-  <Link href="/about" className="border border-green-400 text-green-400 px-10 py-4 rounded-full text-xl font-medium hover:bg-green-400/10 transition w-full sm:w-auto">
-    About Me
-  </Link>
-</div>
-
-
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="lg:w-1/2 flex justify-center"
-        >
-          <div className="relative w-[500px] h-[500px] lg:w-[700px] lg:h-[700px]">
-            <Image src="/heroImg.png" alt="Hero Image" fill className="object-contain" />
-          </div>
-        </motion.div>
+   <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-gray-900 pt-32 lg:pt-10 px-4 sm:px-8"> 
+  <canvas
+    ref={canvasRef}
+    className="absolute inset-0 w-screen h-full"
+    style={{ background: "radial-gradient(circle at 50% 50%, #111 0%, #000 100%)" }}
+  />
+  <div className="container mx-auto max-w-screen-lg relative z-10 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-16">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className="lg:w-1/2 w-full"
+    >
+      <h2 className="text-xl font-medium text-gray-300">Hello, I am</h2> 
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-400">Aditi J.</h1> 
+      <p className="text-lg lg:text-xl text-gray-300 mt-6 w-full break-words px-2 sm:px-0">
+        I enjoy building web experiences, exploring new technologies, and understanding how things work. 
+        In my free time, I like doodling, singing, and diving into topics like human psychology and more.
+      </p>
+      <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-6 w-full">
+        <Link href="/projects" className="bg-green-400 text-black px-8 py-4 rounded-full text-xl font-medium hover:bg-green-500 transition w-full sm:w-auto">
+          View Projects
+        </Link>
+        <Link href="/about" className="border border-green-400 text-green-400 px-8 py-4 rounded-full text-xl font-medium hover:bg-green-400/10 transition w-full sm:w-auto">
+          About Me
+        </Link>
       </div>
-    </section>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="lg:w-1/2 w-full flex justify-center"
+    >
+      <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] lg:w-[700px] lg:h-[700px]">
+        <Image src="/heroImg.png" alt="Hero Image" fill className="object-contain" />
+      </div>
+    </motion.div>
+  </div>
+</section>
+
   )
 }
