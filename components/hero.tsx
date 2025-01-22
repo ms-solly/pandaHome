@@ -96,17 +96,18 @@ export function Hero() {
         >
           <h2 className="text-xl font-medium text-gray-300">Hello, I am</h2> {/* Smaller text */}
           <h1 className="text-5xl lg:text-6xl font-bold text-green-400">Aditi J.</h1> {/* Larger Title */}
-          <p className="text-lg lg:text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
-          I enjoy building web experiences, exploring new technologies, and understanding how things work. In my free time, I like doodling, singing, and diving into topics like human psychology and more.
+          <p className="text-lg lg:text-xl text-gray-300 mt-6 w-screen px-4 lg:max-w-2xl lg:mx-auto ">
+            I enjoy building web experiences, exploring new technologies, and understanding how things work. In my free time, I like doodling, singing, and diving into topics like human psychology and more.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-6">
-            <Link href="/projects" className="bg-green-400 text-black px-10 py-4 rounded-full text-xl font-medium hover:bg-green-500 transition">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 my-6">
+            <Link href="/projects" className="bg-green-400 mx-4 text-black px-10 py-4 rounded-full text-xl font-medium hover:bg-green-500 transition w-full sm:w-auto">
               View Projects
             </Link>
-            <Link href="/about" className="border border-green-400 text-green-400 px-10 py-4 rounded-full text-xl font-medium hover:bg-green-400/10 transition">
+            <Link href="/about" className="border border-green-400 mx-4 text-green-400 px-10 py-4 rounded-full text-xl font-medium hover:bg-green-400/10 transition w-full sm:w-auto">
               About Me
             </Link>
           </div>
+
         </motion.div>
 
         <motion.div
