@@ -1,9 +1,9 @@
 "use client"
 
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
+import { RiTwitterXFill } from "react-icons/ri";
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -27,13 +27,13 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-space font-bold text-white">Connect</h4>
             <div className="flex space-x-4">
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
+              <Link href="https://github.com/ms-solly" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
                 <FaGithub size={24} />
               </Link>
-              <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
-                <FaTwitter size={24} />
+              <Link href="https://x.com/aditiJ0" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
+                <RiTwitterXFill size={24} />
               </Link>
-              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
+              <Link href="https://www.linkedin.com/in/aditi-j-57b64526a/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-transform transform hover:scale-110">
                 <FaLinkedin size={24} />
               </Link>
             </div>
